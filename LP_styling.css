@@ -1,9 +1,13 @@
 
-
 .container{
 width: 100%;
 height: 100%;
 flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .container{
+   overflow: hidden; 
+   }
 }
 .section1{
  background-color: #1F2937;
@@ -25,6 +29,15 @@ h3.item{
     width: 320px;
     height: 50px;
 }
+@media (max-width: 800px) {
+  h3.item{
+    width: 200px;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+
+   }
+}
 .title{
     font-size: 43px;
     color: #F9FAF8;
@@ -34,6 +47,14 @@ h3.item{
     margin-left: 150px;
     position: relative;
     top: -25px;
+}
+@media (max-width: 800px) {
+  .title{
+    font-size: 30px;
+    margin-left: 70px;
+    position: relative;
+    top: -25px;
+   }
 }
 .sub{
  color: #F9FAF8;
@@ -45,6 +66,14 @@ h3.item{
  position: relative;
  top: -110px;
 }
+@media (max-width: 800px) {
+  .sub{
+    margin-left: 70px;
+    width: 300px;
+    position: relative;
+    top: -130px;
+}
+}
 .sign{
  background-color: #3882F6;
  border-radius: 10px;
@@ -55,10 +84,25 @@ h3.item{
  position: relative;
  top: -125px;
 }
+@media (max-width: 800px) {
+  .sign{
+    width: 100px;
+    margin-left: 80px;
+    position: relative;
+    top: -145px;
+   }
+}
 .right{
  display: flex;
  margin-left: 130px;
 }
+@media (max-width: 800px) {
+  .right{
+    flex-direction: column;
+    margin-left: 70px;
+   }
+}
+
 h4.item{
 color: #F9FAF8;
 font-size: 15px;
@@ -67,6 +111,14 @@ align-items: center;
 height: 35px;
 width: 150px;
 }
+@media (max-width: 800px) {
+  h4.item{
+    position: relative;
+    top: -80px;
+    left: 60px;
+    
+   }
+}
 .imagebox{
 background-color: rgb(77, 80, 80);
 align-self: center;
@@ -74,9 +126,26 @@ width: 500px;
 height: 220px;
 margin-left: -530px;
 }
-img{
+@media (max-width: 800px) {
+  .imagebox{
+    width: 250px;
+    height: 130px;
+    
+ 
+   }
+}
+.imagebox img{
 height: 220px;
 width: 500px;
+}
+@media (max-width: 800px) {
+  .imagebox img{
+    width: 250px;
+    height: 130px;
+    margin-left: 274px;
+    position: relative;
+    top: -70px;
+   }
 }
 .section2{
 width: 100%;
@@ -87,17 +156,43 @@ flex-direction: column;
 align-items: center;
 flex-wrap: wrap;
 }
+@media (max-width: 800px) {
+  .section2{
+    flex-direction: column;
+    height: 1050px;
+  }
+}
 .box1 img{
     height: 150px;
     width: 150px; 
 }
+@media (max-width: 800px) {
+  .box1 img{
+      height: 150px;
+      width: 150px;   
+  }
+}
 .top{
  font-size: 20px;
+}
+@media (max-width: 800px) {
+  .top{
+      position: relative;
+      left: 60px;
+  }
 }
 .down{
 display: flex;
 flex-direction: row;
 justify-content: center;
+}
+@media (max-width: 800px) {
+  .down {
+    flex-direction: column;
+    position: relative;
+    left: 60px;
+    
+  }
 }
 .box1{
 border: 3px solid #3882F6;
@@ -107,6 +202,13 @@ border-radius: 10px;
 margin: 20px;
 
 }
+@media (max-width: 800px) {
+  .box1 {
+ margin-bottom: 60px;
+ position: relative;
+ left: -25px
+  }
+}
 .underbox1{
 width: 150px;
 margin: 22px;
@@ -114,11 +216,25 @@ font-weight: lighter;
 position: relative;
 top: -37px;
 }
+@media (max-width: 800px) {
+  .underbox1{
+      margin: 90px;
+      position: relative;
+      top: 170px;  
+      left: -280px;
+  }
+}
 .downbottom{
 display: flex;
 flex-direction: row;
 justify-content: center;
 }
+@media (max-width: 800px) {
+  .downbottom {
+    flex-direction: column;
+  }
+}
+
 .section3{
 background-color: #E5E7EB;  
 height: 25%;
@@ -138,11 +254,26 @@ width: 620px;
 height: 100px;
 display: flex;  
 }
+@media (max-width: 800px) {
+  .testimonial{
+    font-size: 20px;
+    width: 300px;
+
+   }
+}
 .thor{
 position: relative;
 font-weight: bold;
 left: 200px;
 top: -20px;
+}
+@media (max-width: 800px) {
+  .thor{
+    position: relative;
+    left: 50px;
+    top: -10px;
+
+   }
 }
 .section4{
     display: flex;
@@ -157,17 +288,36 @@ top: -20px;
   border-radius: 5px;
   font-family: sans-serif;
 }
+@media (max-width: 800px) {
+  .section4a{
+      height: 150px;  
+  }
+}
 .call{
   position: relative;
   top: 15px;
   left: 90px;
   color: white;
 }
+@media (max-width: 800px) {
+  .call{
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+  }
+}
 .product{
 position: relative;
 left: 90px;
 color: rgb(213, 214, 216);
 font-size: 11px;
+}
+@media (max-width: 800px) {
+  .product{
+   position: relative;
+  left: 40px;
+  width: 200px;
+  }
 }
 .up{
 border: 2px solid white;
@@ -181,6 +331,14 @@ left: 72%;
 top: -40px;
  
 } 
+@media (max-width: 800px) {
+  .up{
+   position: relative;
+   left: 32%; 
+   top: 5px; 
+  
+  }
+}
 .copyright{
     background-color: #1F2937;
     height: 10%;
